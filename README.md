@@ -49,7 +49,7 @@ dispread -v -k "pq_600nits.cal" "chart"
 ### 5. Create ICC Profile
 Build the final HDR ICC profile using the measured display data.
 ```
-colprof -v -A "My_HDR_Display" -o "My_HDR_Display.icc" "chart"
+colprof -v -D "My HDR Display" -O My_HDR_Display.icc -q m -as chart
 ```
 
 ### 6. Install Profile
